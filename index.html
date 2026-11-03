@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Состояние браузера</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <main class="shell">
+      <div class="grid">
+        <section class="panel">
+          <h2>Ширина окна</h2>
+          <div class="stat">
+            <span id="window-width">—</span>
+            <span style="font-size: 17px">px</span>
+          </div>
+          <p class="muted">Событие resize</p>
+        </section>
+        <section class="panel">
+          <h2>Прокрутка</h2>
+          <div class="stat">
+            <span id="scroll-y">—</span> <span style="font-size: 17px">px</span>
+          </div>
+          <p class="muted">Событие scroll</p>
+        </section>
+        <section class="panel">
+          <h2>Активность окна</h2>
+          <p id="focus-status" class="status" aria-live="polite">
+            Ожидание события.
+          </p>
+        </section>
+        <section class="panel">
+          <h2>Обращение к пользователю</h2>
+          <p id="greeting">Здравствуйте, гость!</p>
+          <button id="name-button" class="btn primary">Указать имя</button>
+        </section>
+        <section class="panel wide">
+          <h2>Область прокрутки</h2>
+          <p class="muted">
+            Прокрутите страницу вниз, затем вернитесь к показателю.
+          </p>
+          <div class="scroll-fill"><span>Прокрутите ниже ↓</span></div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
